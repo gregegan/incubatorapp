@@ -3,7 +3,6 @@ import { Notification } from "@/types/notifications";
 import { logger } from "@/lib/logger";
 import { LoginData, LoginResponse, User } from "@/types/users";
 
-
 export const fetchNotifications = async (): Promise<Notification[]> => {
   try {
     const response = await fetch(`${APP_URL}/api/notifications`);

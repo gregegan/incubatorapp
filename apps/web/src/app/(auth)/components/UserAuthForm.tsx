@@ -50,7 +50,7 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
 
     const resJson = await res.json();
     if (resJson.user.id) {
-      router.push("/");
+      router.refresh();
     }
 
     setIsLoading(false);

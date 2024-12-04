@@ -58,7 +58,7 @@ export function ProfileDropdown({ isAdmin }: { isAdmin: boolean }) {
         <DropdownMenuItem
           onClick={async () => {
             await logout();
-            router.push("/login");
+            router.refresh();
           }}
           className="text-destructive"
         >

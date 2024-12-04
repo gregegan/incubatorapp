@@ -1,4 +1,5 @@
 import { APP_URL } from "@/lib/env";
+import { User } from "@/types/users";
 import { cookies } from "next/headers";
 
 export async function getCurrentUser() {
@@ -16,7 +17,7 @@ export async function getCurrentUser() {
     return undefined;
   }
 
-  const data = await res.json();
+  const data: User = await res.json();
 
   if (!data?.id) {
     return undefined;
