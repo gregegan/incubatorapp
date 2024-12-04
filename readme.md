@@ -1,6 +1,7 @@
 # IncubatorApp
 
 ## Install dependencies
+- install homebrew if you don't have it: https://brew.sh/ and follow the installation instructions
 - brew install node
 - brew install pnpm
 
